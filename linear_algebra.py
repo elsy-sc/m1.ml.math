@@ -55,10 +55,10 @@ def matrix_inversion(A):
             return inverse
             
 ## matrix eigenvalues
-def matrix_eigenvalues(A):
+def eigenvalues(A):
     pass
 ## matrix eigenvectors
-def matrix_eigenvectors(A):
+def eigenvectors(A):
     pass
 ## matrix norm
 def norm(A):
@@ -69,12 +69,12 @@ def distance(A, B):
 
 
 ## test 
-A = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+A = [[2, 3, 1], [4, 1, -3], [-2, 5, 2]]
 B = [[1, 0, 0], [0, 1, 0], [0, 0, 1]]
 
+print('Matrix determinant : ' , str(determinant(A)))
 print('Matrix Minor : ', str (minor(A, 1, 1)))
 print('Matrix multiplication : ' , str (matrix_multiplication(A, B)))
 print('Matrix Transpose : ', str (transpose(A)))
-print('Matrix determinant : ' , str(determinant(A)))
 print('Matrix inversion : ' + str(matrix_inversion(A)))
 print('Matrix norm : ' + str (norm(A)))
